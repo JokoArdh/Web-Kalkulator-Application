@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Berbasis Web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>PROJEK KALKULATOR</h1>
+        <article>
+            <pre>
+                Nama : Joko Ardiyanto
+                Nim  : C20010007
+                Prodi: Teknik Informatika
+            </pre>
+        </article>
+        <form id="f1" name="f1" method="post" action="">
+            <p>
+                <label for="nilai1">Nilai1 : </label>
+                <input type="text" onfocus="tampil1()" placeholder="Masukan Bilangan 1" id="bil1">
+            </p>
+            <p>
+                <label for="nilai1">Nilai2 :</label>
+                <input type="text" placeholder="Masukan Bilangan 2" id="bil2">
+            </p>
+            <p>
+                <label for="hasil">Result :</label>
+                <input type="text" id="hasil">
+            </p>
+            <input type="button" value="+" onclick="tambah()">
+            <input type="button" value="-" onclick="mines()">
+            <input type="button" value="x" onclick="kali()">
+            <input type="button" value="/" onclick="bagi()">
+            <input type="button" value="CLEAR FORM" onclick="formReset()">
+        </form>
+        <div class="table">
+            <table id="tab1">
+                <tr>
+                    <td> <input class="button" type="button" value="1" onclick="document.f1.bil1.value+='1'" /></td>
+                    <td> <input class="button" type="button" value="2" onclick="document.f1.bil1.value+='2'" /></td>
+                    <td> <input class="button" type="button" value="3" onclick="document.f1.bil1.value+='3'" /></td>
+                    <td> <input class="button" type="button" value="4" onclick="document.f1.bil1.value+='4'" /></td>
+                    <td> <input class="button" type="button" value="5" onclick="document.f1.bil1.value+='5'" /></td>
+                </tr>
+                <tr>
+
+                    <td> <input class="button" type="button" value="6" onclick="document.f1.bil1.value+='6'" /></td>
+                    <td> <input class="button" type="button" value="7" onclick="document.f1.bil1.value+='7'" /></td>
+                    <td> <input class="button" type="button" value="8" onclick="document.f1.bil1.value+='8'" /></td>
+                    <td> <input class="button" type="button" value="9" onclick="document.f1.bil1.value+='9'" /></td>
+                    <td> <input class="button" type="button" value="0" onclick="document.f1.bil1.value+='0'"> </td>
+                </tr>
+            </table>
+            <table id="tab2">
+                <tr>
+                    <td> <input class="button" type="button" value="1" onclick="document.f1.bil2.value+='1'" /></td>
+                    <td> <input class="button" type="button" value="2" onclick="document.f1.bil2.value+='2'" /></td>
+                    <td> <input class="button" type="button" value="3" onclick="document.f1.bil2.value+='3'" /></td>
+                    <td> <input class="button" type="button" value="4" onclick="document.f1.bil1.value+='4'" /></td>
+                    <td> <input class="button" type="button" value="5" onclick="document.f1.bil1.value+='5'" /></td>
+                </tr>
+                <tr>
+
+                    <td> <input class="button" type="button" value="6" onclick="document.f1.bil1.value+='6'" /></td>
+                    <td> <input class="button" type="button" value="7" onclick="document.f1.bil2.value+='7'" /></td>
+                    <td> <input class="button" type="button" value="8" onclick="document.f1.bil2.value+='8'" /></td>
+                    <td> <input class="button" type="button" value="9" onclick="document.f1.bil2.value+='9'" /></td>
+                    <td> <input class="button" type="button" value="0" onclick="document.f1.bil2.value+='0'"> </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!--Script Javascript-->
+    <script src="js/script.js" type="text/javascript"></script>
+
+</body>
+
+</html>
